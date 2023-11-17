@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
                 print(line)
 
-            case _ if (m := re.match(r'select (.+)', command)) is not None:
+            case _ if (m := re.match(r'select (.+)', command)):
                 name_punct = m.group(1)
                 found = False
                 for route in routes:
